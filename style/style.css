@@ -1,0 +1,155 @@
+body {
+    background-color: black;
+}
+#home {
+    height: 50vh; /* Hoogte van de sectie */
+    background-color: black; /* Achtergrondkleur */
+    display: flex;
+    align-items: center; /* Center de video verticaal */
+    justify-content: center; /* Center de video horizontaal */
+}
+@media (max-width: 768px){
+    #home {
+        height: 35vh;
+    }
+}
+
+.video-container {
+    width: 100%; /* Volledige breedte van de viewport */
+    height: 100%; /* Volledige hoogte van de ouderdiv (in dit geval #home) */
+    overflow: hidden; /* Verberg eventuele overloop */
+    align-items: center; /* Center de video verticaal */
+    justify-content: center; 
+}
+
+#myVideo {
+    position: relative;   
+    width: 100%; 
+    height: 90%; 
+    object-fit: cover;
+}
+@media (max-width: 768px) { /* Aanpassen aan jouw specifieke behoeften */
+    #myVideo {
+        height: 90%; /* Video vult de hoogte van de div */
+        object-fit: contain; /* Probeer 'contain' voor kleinere schermen */
+    }
+}
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Center de elementen horizontaal */
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Voeg een max-breedte toe voor de navigatiebalk */
+}
+.navbar {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: rgba(250, 243, 222, 0.89);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between; /* Zorg ervoor dat de elementen worden uitgelijnd */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu {
+    display: none; /* Verberg het menu in eerste instantie */
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgba(250, 243, 222, 0.89);
+    font-family: 'Rock Salt', cursive;
+}
+.menu a:hover{
+    color: rgba(249, 204, 108, 0.89);
+}
+@media (max-width: 768px){
+    .menu a {
+        font-size: 8pt;
+    }
+}
+
+.hamburger {
+    font-size: 3rem;
+    display: block;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger {
+        margin-top: 5px; /* Voeg wat ruimte toe boven de hamburgerknop */
+
+        margin-right: 0;
+    }
+}
+.quote{  
+    font-family: 'Rock Salt', cursive;
+    font-size: 18pt;
+    text-align: center; /* Center de tekst in de quote div */
+    margin-top: 20px;
+    color: rgba(250, 243, 222, 0.89);
+}
+@media (max-width: 768px){
+    .quote{
+        font-size: 11pt;
+    }
+}
+
+.custom-hr {
+    width: 65%; /* Pas de breedte aan naar 75% van de container */
+    margin: 20px auto; /* Stel de marge in om het op de juiste positie te plaatsen */
+    border: none;
+    border-top: 5px solid rgba(249, 204, 108, 0.89); /* Kies de gewenste kleur */
+    float: right; /* Laat de lijn vanuit de rechterzijde komen */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/* ABOUT SECTIE */
+.about {
+    width: 100%;
+    height: 10vh; /* Pas de hoogte aan naar 25% van de viewport hoogte */
+    position: static;
+    overflow: hidden;
+    display: flex; /* Gebruik flexbox om de video te positioneren */
+    justify-content:left;
+}
+
+.about-header{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media (max-width: 768px){
+    .about-header {
+        object-fit: contain;
+    }
+}
+#aboutVideo{
+    width: 200%;
+    padding: 5%;
+
+}
+@media (max-width: 768px){
+    #aboutVideo{
+        width: 400%;
+        padding: 5%;
+        
+    }
+}
+
+
+
+/* De rest van je CSS-stijlen... */
+
