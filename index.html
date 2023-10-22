@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css" type="text/css">
-    <script src="script.js" defer></script>
+    <script type="module" src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -29,11 +31,11 @@
             </div>
         </div>
     </div>
-    <div class="quote">
-        <p><b>" Simplicity is the <br>
-            ultimate sophistication."</b><br>
+    <div class="quote"><br>
+        <p>" Simplicity is the <br>
+            ultimate sophistication."<br>
             <br>
-            <i>-Leonardo Da Vinci</i>
+            -Leonardo Da Vinci
         </p>
     </div>
     <br>
@@ -61,35 +63,58 @@
                   </div>
                 </div>
               </div>
-              <p><b>Hi! I'm Kimberley, a passionate webdesigner who loves to code!</b><br></p>
+              <p>Hi! I'm Kimberley, a passionate webdesigner who loves to code! <br></p>
               <p id="about-content">
-               <b> Creative, playfull and simplistic designs are the key values i try to implement in my designs.<br>
+                Creative, playfull and simplistic designs are the key values i try to implement in my designs.<br>
                 from a simple one-page design to a fullstack webapp, i love creating it all!<br>
                 My tech stack includes css3, basic javascript, python, Tkinter, SQLite3, and more to come.<br>
                 Interested? Or curious about the possibilities? Don't hestitate to contact me!
                 <br>
-                -- Kimberley</b>
+                -- Kimberley
 
             </p>
             <button onclick="toggleAbout()" id="toggle-btn">Lees meer</button>
         </div>
     </div>
-
-    <div id="quote">
-        <!-- Plaats hier de mooie quote die je wilt laten zien -->
+    <hr class="custom-hr-quote"><br>
+    <br>
+    <br>
+    <div id="quote"><br>
+        "The key to succes is to focus on goals,<br>
+        not obstacles."<br>
+        - Unknown
     </div>
+    <hr class="custom-hr">
 
     <div id="portfolio">
-        <!-- Inhoud voor de portfolio sectie -->
+        <div class="portfolio-header">
+            <video autoplay muted loop id="portfolioVideo">
+                <source src="vid/Portfolio.mp4" type="video/mp4"> 
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="portfolio-content">
+            <p class="portfolio-text"> Down here you'll find a small grasp of my projects.<br>
+                - A 3D  cube which rotates, and can be rotated by you.<br>
+                - A few simple webpages i designed for clients.<br>
+                - For more projects you can always contact me!<br></p>
+            <div id="cube">    
+            </div>
+            <div class="websites">
+                
+                <iframe class='view' src="https://www.whatever-rocks.nl"></iframe>
+                
+                <iframe class='view' src="https://kimberleyvm.github.io/van_rooij_reclame/"></iframe>
+            </div>
+           
+        </div>
     </div>
-
+    <hr class="custom-hr-quote">
     <div id="contact">
         <!-- Inhoud voor de contact sectie -->
     </div>
 
-    <div id="cube">
-        <!-- Hier kun je de code voor je Three.js 3D-kubus toevoegen -->
-    </div>
+    
 
     <div id="quote">
         <!-- Plaats hier de mooie quote die je wilt laten zien -->
