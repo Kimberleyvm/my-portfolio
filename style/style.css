@@ -331,21 +331,19 @@ body {
     justify-content:space-around;
     
 }
-.view{
-    width: 400px;
-    height: 400px;
-    margin: 0 20px;
+.screens {
+    height: 25%;
+    width: 20%;
+    margin: 5px;
 }
 @media (max-width: 768px) {
     .websites {
         display: block;
         text-align: center;
     }
-
-    .view {
-        width: 70%;
-        height: auto;
-        margin: 10px auto;
+    .screens {
+        height: 200px;
+        width: 200px;
     }
 }
 .portfolio-text{
@@ -442,4 +440,24 @@ body {
     color: rgba(250, 243, 222, 0.89);
     font-family: 'Sue Ellen Francisco', cursive;
     font-size: 15pt;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: rgba(250, 243, 222, 0.89);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    font-family: 'Sue Ellen Francisco', cursive;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    color: rgba(250, 243, 222, 0.89);
+}
+
+.back-to-top.show {
+    display: block;
 }
